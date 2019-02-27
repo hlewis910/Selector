@@ -40,9 +40,19 @@ class $ {
  }
 
  blink(interval){
-
-    /*  
-        */
+    setInterval( () => {
+        this.elements.forEach( (elem) => {
+            if (elem.style.display==="none"){
+                elem.style.display = "inherit"
+            } else {
+                elem.style.display = 'none';
+            }
+        })
+    }
+    ,interval
+    )
+    
 }
+
 }
 
