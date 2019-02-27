@@ -14,6 +14,35 @@ class $ {
         }
   }
   //hide()
-  //show()
+  hide (){
+      this.elements.forEach( (elem) => {elem.style.display = 'none'} );
+  }
+  
+  show(){
+    this.elements.forEach( (elem) => {elem.style.display = 'inherit'} );
+  }
+
+  addClassName(className){
+    this.elements.forEach( (elem) => {elem.className = className} );
+ }
+
+ removeClassName(className){
+     this.elements.forEach( (elem) => {elem.className = 'none'});
+ }
+
+ text(mytext){
+    this.elements.forEach( (elem) => {elem.innerText = mytext} );
+ }
+
+ addChild(domType) {
+     
+     this.elements.forEach( (elem) => {elem.appendChild(document.createElement(domType))});
+ }
+
+ blink(interval){
+
+    /*  
+        */
+}
 }
 
